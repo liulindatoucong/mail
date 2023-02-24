@@ -44,8 +44,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liulin.controller.MainController">
    <left>
       <Pane prefHeight="675.0" prefWidth="357.0" style="-fx-background-color: #E5E7E9;" BorderPane.alignment="CENTER">
          <children>
@@ -55,7 +54,7 @@
                </font>
             </Label>
             <Label layoutX="45.0" layoutY="98.0" text="地区" />
-            <ChoiceBox layoutX="94.0" layoutY="94.0" prefHeight="23.0" prefWidth="159.0" />
+            <ChoiceBox fx:id="area" layoutX="94.0" layoutY="94.0" prefHeight="23.0" prefWidth="159.0" />
             <Button layoutX="266.0" layoutY="94.0" mnemonicParsing="false" text="增加区域" />
             <Label layoutX="21.0" layoutY="140.0" text="公司名称" />
             <TextField layoutX="93.0" layoutY="136.0" />
