@@ -16,7 +16,7 @@ public class MainFrame extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Pane root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("weimail.fxml")));
+        Pane root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/weimail.fxml")));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();

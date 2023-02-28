@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liulin.dao.AreaDao">
+    <select id="getAreas" resultType="Area">
+        select id, areaname, chinesename from area
+    </select>
+
+    <insert id="addOneArea">
+        insert into area(areaname, chinesename) values (#{areaname}, #{chinesename})
+    </insert>
+</mapper>

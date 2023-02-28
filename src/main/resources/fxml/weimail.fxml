@@ -44,7 +44,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liulin.controller.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liulin.controller.MainController">
    <left>
       <Pane prefHeight="675.0" prefWidth="357.0" style="-fx-background-color: #E5E7E9;" BorderPane.alignment="CENTER">
          <children>
@@ -55,7 +55,7 @@
             </Label>
             <Label layoutX="45.0" layoutY="98.0" text="地区" />
             <ChoiceBox fx:id="area" layoutX="94.0" layoutY="94.0" prefHeight="23.0" prefWidth="159.0" />
-            <Button layoutX="266.0" layoutY="94.0" mnemonicParsing="false" text="增加区域" />
+            <Button fx:id="addAreaDialog" layoutX="266.0" layoutY="94.0" mnemonicParsing="false" text="增加区域" />
             <Label layoutX="21.0" layoutY="140.0" text="公司名称" />
             <TextField layoutX="93.0" layoutY="136.0" />
             <Label layoutX="21.0" layoutY="178.0" text="公司网址" />
@@ -87,7 +87,7 @@
             <Label layoutX="534.0" layoutY="25.0" text="邮箱模板" />
             <ChoiceBox layoutX="598.0" layoutY="21.0" prefWidth="150.0" />
             <Label layoutX="49.0" layoutY="59.0" text="地区" />
-            <ChoiceBox layoutX="90.0" layoutY="55.0" prefHeight="23.0" prefWidth="159.0" />
+            <ChoiceBox fx:id="mailarea" layoutX="90.0" layoutY="55.0" prefHeight="23.0" prefWidth="159.0" />
             <Button layoutX="279.0" layoutY="55.0" mnemonicParsing="false" text="查询" />
             <TableView layoutX="25.0" layoutY="109.0" prefHeight="574.0" prefWidth="807.0">
               <columns>
