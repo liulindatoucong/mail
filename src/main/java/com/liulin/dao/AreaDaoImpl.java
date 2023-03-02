@@ -27,4 +27,14 @@ public class AreaDaoImpl implements AreaDao{
             throw e;
         }
     }
+
+    @Override
+    public int getAreaCountByName(String areaname) throws Exception{
+        try (SqlSession session = MybatisUtils.getSession()) {
+            AreaDao mapper = session.getMapper(AreaDao.class);
+            return mapper.getAreaCountByName(areaname);
+        } catch (Exception e) {
+            throw e;
+        }
+    }
 }

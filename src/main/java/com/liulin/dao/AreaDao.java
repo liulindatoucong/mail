@@ -14,4 +14,6 @@ public interface AreaDao {
     List<Area> getAreas();
 
     void addOneArea(Area area) throws Exception;
+
+    int getAreaCountByName(String areaname) throws Exception;
 }

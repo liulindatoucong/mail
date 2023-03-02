@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="675.0" prefWidth="357.0" style="-fx-background-color: #E5E7E9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liulin.controller.CompanyController">
+   <children>
+      <Label alignment="CENTER" layoutX="83.0" layoutY="21.0" text="公司信息录入" textFill="#45838d">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="98.0" text="地区" />
+      <ChoiceBox fx:id="area" layoutX="94.0" layoutY="94.0" prefHeight="23.0" prefWidth="159.0" />
+      <Button fx:id="addAreaDialog" layoutX="266.0" layoutY="94.0" mnemonicParsing="false" text="增加区域" />
+      <Label layoutX="21.0" layoutY="140.0" text="公司名称" />
+      <TextField fx:id="companyName" layoutX="93.0" layoutY="136.0" />
+      <Label layoutX="21.0" layoutY="178.0" text="公司网址" />
+      <TextArea fx:id="companyUrl" layoutX="93.0" layoutY="178.0" prefHeight="68.0" prefWidth="244.0" />
+      <Label layoutX="21.0" layoutY="263.0" text="公司邮箱" />
+      <TextArea fx:id="companyEmails" layoutX="93.0" layoutY="263.0" prefHeight="68.0" prefWidth="244.0" />
+      <Label layoutX="21.0" layoutY="349.0" text="公司地址" />
+      <TextArea fx:id="companyLocations" layoutX="93.0" layoutY="349.0" prefHeight="68.0" prefWidth="244.0" />
+      <Label layoutX="21.0" layoutY="435.0" text="联系方式" />
+      <TextArea fx:id="companyTelephones" layoutX="93.0" layoutY="435.0" prefHeight="68.0" prefWidth="244.0" />
+      <Label layoutX="33.0" layoutY="525.0" text="微信" />
+      <TextField fx:id="companyWeixin" layoutX="93.0" layoutY="521.0" />
+      <Label layoutX="25.0" layoutY="567.0" text="wechat" />
+      <TextField fx:id="companyWeChat" layoutX="93.0" layoutY="563.0" />
+      <Label layoutX="33.0" layoutY="604.0" text="备注" />
+      <TextArea fx:id="companyNote" layoutX="93.0" layoutY="604.0" prefHeight="73.0" prefWidth="244.0" />
+      <Button layoutX="56.0" layoutY="709.0" mnemonicParsing="false" text="保存" />
+      <Button layoutX="254.0" layoutY="709.0" mnemonicParsing="false" text="删除" />
+   </children>
+</Pane>

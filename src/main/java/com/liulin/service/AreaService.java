@@ -14,6 +14,10 @@ public class AreaService {
     }
 
     public void addOneArea(Area area) throws Exception {
+        if(areaDaoImpl.getAreaCountByName(area.getAreaname()) > 0) {
+            throw new RuntimeException(area.getAreaname()+"地区已经存在！");
+        }
         areaDaoImpl.addOneArea(area);
     }
+
 }

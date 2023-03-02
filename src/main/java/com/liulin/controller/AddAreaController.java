@@ -66,7 +66,9 @@ public class AddAreaController {
             warnInfo.setTextFill(Color.GREEN);
             warnInfo.setText("保存地区成功！");
 
-            ((MainController)ControllerMaps.controllerMaps.get("MainController")).resetArea();
+            ((CompanyController)ControllerMaps.controllerMaps.get("CompanyController")).resetArea();
+            ((SendMailController)ControllerMaps.controllerMaps.get("SendMailController")).resetArea();
+
         });
     }
 
