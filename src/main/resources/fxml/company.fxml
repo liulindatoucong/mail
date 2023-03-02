@@ -34,7 +34,7 @@
       <TextField fx:id="companyWeChat" layoutX="93.0" layoutY="563.0" />
       <Label layoutX="33.0" layoutY="604.0" text="备注" />
       <TextArea fx:id="companyNote" layoutX="93.0" layoutY="604.0" prefHeight="73.0" prefWidth="244.0" />
-      <Button layoutX="56.0" layoutY="709.0" mnemonicParsing="false" text="保存" />
-      <Button layoutX="254.0" layoutY="709.0" mnemonicParsing="false" text="删除" />
+      <Button fx:id="saveCompany" layoutX="56.0" layoutY="709.0" mnemonicParsing="false" text="保存" />
+      <Button fx:id="resetCompany" layoutX="254.0" layoutY="709.0" mnemonicParsing="false" text="清空" />
    </children>
 </Pane>

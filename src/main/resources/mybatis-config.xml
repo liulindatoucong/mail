@@ -20,5 +20,6 @@
 
     <mappers>
         <mapper resource="mapper/AreaDao.xml"/>
+        <mapper resource="mapper/CompanyDao.xml"/>
     </mappers>
 </configuration>

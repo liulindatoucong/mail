@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liulin.dao.CompanyDao">
+    <insert id="insertCompany">
+        insert into company(name, emails, url, locations, telephones, weixin, weChat, note, areaname)
+        values (#{name},#{emails},#{url},#{locations},#{telephones},#{weixin},#{weChat},#{note},#{areaname})
+    </insert>
+
+    <select id="getCompanyCountByName" resultType="int">
+        select count(1) companyNum from company where name = #{name}
+    </select>
+</mapper>
